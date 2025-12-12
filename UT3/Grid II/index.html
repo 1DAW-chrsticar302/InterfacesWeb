@@ -4,9 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRID II WEB</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .todo{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container{
+            background-image: url(hombre-de-tiro-medio-con-gafas-vr.jpg);
+            background-size: cover;
+            background-position: right;
+            background-position: top;
+            background-color: rgb(191, 160, 241);
+            height: 600px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-areas: 
+                ". . . . opciones .";
+            /* background-color: rgb(191, 160, 241); */
+            font-size: 20px;
+        }
+
+        .opciones{
+            grid-area: opciones;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 2%;
+        }
+
+        .opciones a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 1.5%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .opciones2{
+            grid-area: opciones;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 2%;
+        }
+
+        .opciones2 a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 1.5%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .cuadrado {
+            border: white 1px solid;
+        }
+        
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            margin: 10%;
+            margin-left: 10%;
+            margin-right: 30%;
+        }
+
+        .titulo * {
+            margin: 1%;
+            color: white;
+        }
+
+        .titulo h1 {
+            font-size: 50px;
+        }
+
+        .titulo p {
+            font-size: 30px;
+        }
+
+        .titulo button {
+            width: 20%;
+            padding: 2%;
+            background-color: white;
+            border: 0;
+            border-radius: 50px;
+            color: rgb(191, 160, 241);
+            cursor: pointer;
+        }
+
+        button {
+            width: 13%;
+            min-width: 150px;
+            min-height:55px;
+            padding: 1.5%;
+            background-color: rgb(95, 66, 199);
+            border: 0;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .presentacion{
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .introduccion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        h2{
+            color: rgb(95, 66, 199);
+            min-width: 20px;
+            font-size: 45px;
+        }
+
+        .introduccion *{
+            margin: 1.5%;
+        }
+
+        .imagen {
+            background-image: url(IMG_20240809_135824.jpg);
+            background-position: right;
+            background-size: cover;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .habilidades {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .imagen-derecha {
+            justify-content: center;
+            align-content: center;
+            padding: 5%;
+        }
+
+        .habilidades img {
+            width: 100%;
+        }
+
+        .habilidades div {
+            width: 50%;
+        }
+
+        
+    </style>
+
 </head>
 <body>
+    <div class="todo">
+
+        <div class="container" id="inicio">
+            <div class="menu">
+                <div class="opciones">
+                    <a class="cuadrado" href="">Contáctame ahora</a>
+                    <a href="">Sobre mi</a>
+                    <a href="">Proyectos</a>
+                </div>
+            </div>
+            <div class="titulo">
+                <h1>Hola soy Christian Carrasco [Frontend developer]</h1>
+                <p>Transformando ideas a realidades</p>
+                <button>Contáctame ahora</button>
+            </div>
+        </div>
+
+        <div class="presentacion" id="#sobreMi">
+        <div class="introduccion">
+            <div class="imagen"></div>
+            <h2>Mi nombre es: Christian Carrasco</h2>
+            <p>
+                Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo
+                Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo
+                Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo
+                Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo
+            </p>
+            <button>Contáctame ahora</button>
+        </div>
+
+        <div class="habilidades" id="skills">
+            <div class="texto">
+                <h2>Mis habilidades</h2>
+                <p>
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttt
+                </p>
+                <p>
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttt
+                </p>
+            </div>
+            <div class="imagen-derecha">
+                <img src="portatil.png" alt="">
+            </div>
+        </div>
+
+        <div class="sobreMi">
+            <div class="imagen-izquierda"></div>
+            <div class="texto2">
+                <h2>Sobre mi trabajo</h2>
+                <p>
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttt
+
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+                    ttttttttttttttttttttttttttttttttttttttt
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="proyectos" id="proyectos">
+        <h2>Mis proyectos</h2>
+        <div class="imagenes">
+            <div class="grande"></div>
+
+            <div class="peque1"></div>
+            <div class="peque2"></div>
+            <div class="peque3"></div>
+            <div class="peque4"></div>
+        </div>
+    </div>
+
+    <div class="comentarios">
+        <h2>¿Qué dicen de nosotros?</h2>
+
+        <div class="opiniones">
+            <div class="coment1">
+
+            </div>
+
+            <div class="coment2">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="reopciones">
+            <div class="opciones2">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobreMi">Sobre mi</a>
+                <a href="#skills">Mis skills</a>
+                <a href="#proyectos">Proyectos</a>
+            </div>
+        </div>
+
+        <div class="contacto">
+            <h3>Contactame</h3>
+            <div class="media">
+                <div class="facebook"></div>
+                <div class="twitter"></div>
+                <div class="whatsapp"></div>
+            </div>
+        </div>
+    </footer>
     
+    </div>
+
     
 
 </body>
