@@ -1,0 +1,8 @@
+@use 'variables';
+
+@function text($espaciado) {
+    @for $espaciado from 0 through 4 {
+        @return $espaciado;
+    }
+}
+
