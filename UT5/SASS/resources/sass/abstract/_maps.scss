@@ -1,0 +1,23 @@
+$colors:(
+    primary: #2563eb, 
+    secondary: #64748b, 
+    success: #16a34a, 
+    warning: #f59e0b, 
+    danger: #dc2626, 
+    info: #0ea5e9, 
+    neutral-100: #f3f4f6, 
+    neutral-900: #111827
+);
+
+$theme-light: ( 
+    background: #ffffff, 
+    text: #111827, 
+    surface: #f9fafb 
+); 
+
+$theme-dark: ( 
+    background: #020617, 
+    text: #e5e7eb, 
+    surface: #111827 
+);
+
