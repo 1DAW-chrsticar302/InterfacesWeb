@@ -1,0 +1,29 @@
+@use 'functions' as functions;
+@use 'variables' as variables;
+
+@mixin respond($breakpoints) {
+    @if $breakpoints == xl {
+        @media(min-width: 1200px) { @content; }
+    }
+}
+
+
+
+@mixin flex-center($gap:0){
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin parafosColores() {
+    $contador: 1;
+    @each $color in variables.$colors {
+        .item-#{$contador} {
+            color:$color;
+        }
+        $contador:$contador+1;
+    }
+}
+

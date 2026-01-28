@@ -1,3 +1,5 @@
+
+//Para márgenes, paddings y gaps
 $espaciados:(
     xs:0.25,
     sm:0.5,
@@ -5,14 +7,42 @@ $espaciados:(
     lg:1.5,
     xl:2
 );
+
+$colors:(
+    #3498db,
+    #2ecc71,
+    #e74c3c,
+    #f1c40f,
+    #2c3e50,
+    #ecf0f1
+);
+
+//El tamaño de la fuente predeterminada
 $font-size-base: 16px;
+//El radio por el que se multiplicará el valor base para botener los demás estilos
 $font-scale_ratio: 1.25;
 
+//Puntos de ruptura de la web
 $breakpoints:(
-    xs:0,
-    xs:576px,
-    xs:768px,
-    xs:992px,
-    xs:1200px
-)
+    movil:576px,
+    tablet:768px,
+    ordenador:992px,
+    televisor:1200px
+);
+
+$border:(
+    1:1px,
+    2:2px,
+    3:4px,
+    4:8px
+);
+
+$shadows:(
+    1:3px 3px 6px black,
+    2:6px 6px 12px black,
+    3:9px 9px 18px black,
+    4:12px 12px 24px black
+);
+
+
 

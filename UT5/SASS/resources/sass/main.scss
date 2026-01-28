@@ -1,0 +1,10 @@
+@use 'abstract/variables' as variables;
+@use 'abstract/functions' as functions;
+@use 'abstract/mixins' as mixins;
+@use 'abstract/maps' as maps;
+
+.container {
+    @include mixins.flex-center(20px);
+}
+
+@include mixins.parafosColores();

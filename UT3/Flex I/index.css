@@ -1,0 +1,156 @@
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menu a{
+    margin-left: 10px;
+    color:orange;
+    text-decoration: none;
+    font-size: 25px;
+}
+.paisaje{
+    padding: 10%;
+    background-image: url(src/pantheon_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.paisaje h1 {
+    font-size: 80px;
+}
+.fuente{
+    font-size: 20px;
+}
+button{
+    background-color: rgb(154, 173, 246);
+    font-size: 20px;
+    color: white;
+    width: 13%;
+    padding: 1%;
+    border-radius: 10px;
+    border: rgb(134, 126, 212) solid 2px;
+}
+button:hover {
+    background-color: rgb(126, 122, 209);
+    cursor: pointer;
+}
+.circulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.circulos h2 {
+    color: orange ;
+}
+.imagenes {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hb1{
+    background-image: url(src/Pantheon_Comet_Spear_HD.png);
+}
+.hb2{
+    background-image: url(src/Pantheon_Shield_Vault_HD.png);
+}
+.hb3{
+    background-image: url(src/Pantheon_Aegis_Assault_HD.png);
+}
+.ben {
+    width: 220px;
+    height: 220px;
+}
+.expert {
+    width: 190px;
+    height: 190px;
+    background-image: url(src/1762482341955_faker.jpeg);
+    background-position: center;
+}
+.circle{
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+
+    color: white;
+    align-content: center;
+    font-size: 30px;
+}
+.projects{
+    margin-top: 2%;
+    padding-top: 0px;
+    background-color: rgba(0,0,0,0.1);
+    justify-items: center;
+    padding: 3%;
+}
+.projects h2 {
+    color: orange;
+}
+.images2{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.images2 img{
+    width: 400px;
+    height: 220px;
+    box-shadow: 0px 0px 6px black;
+}
+.experts{
+    justify-items: center;
+}
+.experts h2{
+    color: orange;
+}
+.pie{
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background-image: url(src/pantheon_banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconos {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.pie img{
+    width: 40px;
+    height: 40px;
+}
+p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    font-size: 40px;
+}
